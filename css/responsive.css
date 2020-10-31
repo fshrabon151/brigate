@@ -1,0 +1,224 @@
+@media screen and (max-width: 1139px) {
+  .container {
+    width: 90%;
+  }
+
+  .logo{
+    width: 10%;
+    float: left;
+    margin: auto;
+  }
+  .primadyMenu{
+    width: 90%;
+  }
+
+  .sliderContect{
+    width: 50%;
+  }
+  .serviceContent {
+    float: none;
+    width: 95%;
+    display: grid;
+    place-items: center;
+    margin-bottom: 40px;
+  }
+
+  .serviceContent:last-child{
+    margin-bottom: 0px;
+  }
+
+  .leftImage {
+    float: none;
+    width: 95%;
+    display: grid;
+    place-items: center;
+  }
+
+  .rightContent {
+    margin-top: 60px;
+    width: 95%;
+    float: none;
+    display: grid;
+    place-items: center;
+  }
+  .projectStatusContent {
+    float: none;
+    width: 80%;
+    display: grid;
+    place-items: center;
+    margin-left: 10%;
+  }
+
+  .teamInfoContentPost {
+    width: 80%;
+    float: none;
+    margin-left: 12%;
+    margin-bottom: 15px;
+  }
+  .teamInfoContentPost:last-child {
+    margin-bottom: 0px;
+  }
+
+  .tableConent {
+    float: none;
+    margin-bottom: 60px;
+    width: 90%;
+  }
+
+  .ideaShowcaseRightImage {
+    width: 100%;
+    float: none;
+  }
+  .ideaShowcaseLeftContent {
+    float: none;
+    width: 100%;
+    padding-left: 25px;
+  }
+  .ourTeamFaceContentSingle {
+    float: none;
+    width: 80%;
+    margin-left: 15%;
+    margin-bottom: 80px;
+  }
+
+  .ourTeamFaceContentSingle:last-child {
+    margin-bottom: 0px;
+  }
+
+  .bestProjectWrapper {
+    overflow: hidden;
+    column-count: 2;
+  }
+
+  .bestProjectSingle{
+    margin-left: 8%;
+  }
+
+  .latestNewsSingle{
+    float: none;
+    width: 70%;
+    margin-left: 15%;
+  }
+  section#subscribe{
+    margin-bottom: -100px;
+  }
+
+  .subsBoxexWrapper{
+    width: 80%;
+    margin: auto;
+  }
+
+  .subsBoxSingle{
+    float: none;
+    margin: auto;
+  }
+  .subsBoxSingle:last-child{
+    margin: auto;
+  }
+
+  .fbox{
+    
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 30px;
+    
+    
+  }
+  .fbox:last-child{
+    margin-bottom: 0px;
+  }
+
+  .copyrightText{
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin-left: 25px;
+  }
+
+  .copyrightMenu{
+    float: none;
+    width: 70%;
+    /* display: grid; */
+    /* place-items: center; */
+  }
+
+
+
+
+
+}
+
+@media only screen and (max-width: 992px) {
+
+  .ideaShowcasePost{
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 640px) {
+
+
+  .sliderContect{
+    width: 50%;
+  }
+
+  .sliderContect h1{
+    font: 15px !important;
+  }
+
+  .btnDesign a{
+    width: 80%;
+    padding: 5px 10px;
+  }
+
+  .rightContent{
+    width: 40%;
+    margin: 0px;
+  }
+
+  .teamPost{
+    width: 80%;
+    margin: 0;
+
+  }
+
+
+
+  .servicePost{
+    width: 80%;
+  }
+
+  .tableConent{
+    width: 80%;
+  }
+
+  .ideaShowcasePost{
+    width: 80%;
+    margin: auto;
+  }
+
+  .titleHeadlinePost{
+    width: 90%;
+    margin: auto;
+  }
+  .titleHeadlinePost p{
+    width: 95%;
+  }
+
+  .subsBoxSingle{
+    width: 85%;
+  }
+  .fbInfox{
+    width: 80%;
+  }
+
+  .copyrightMenu{
+    float: none;
+    width: 50%;
+   
+  }
+}
+
+@media screen and (max-width: 320px) {
+}

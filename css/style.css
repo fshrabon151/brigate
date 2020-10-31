@@ -1,0 +1,1364 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+}
+
+section {
+  padding: 80px 0px;
+}
+
+.container {
+  width: 1140px;
+  margin: auto;
+  padding: 0px 15px;
+}
+
+.topbarBackground {
+  background: #f5f5f5;
+}
+
+.topbarWrapper {
+  overflow: hidden;
+}
+
+.phone {
+  width: 200px;
+  padding: 15px 14px;
+  float: left;
+  border-left: 1px solid #e4e4e4;
+}
+.phone i {
+  color: #ff5200;
+}
+
+.email {
+  width: 735px;
+  padding: 15px 14px;
+  float: left;
+  border-left: 1px solid #e4e4e4;
+}
+.email i {
+  color: #ff5200;
+}
+
+.social {
+  width: 145px;
+  float: left;
+}
+
+.social a {
+  color: #222;
+  display: block;
+  float: left;
+  padding: 15px;
+  border-right: 1px solid #e4e4e4;
+  transition: 0.3s;
+}
+
+.social a:first-child {
+  border-left: 1px solid #e4e4e4;
+}
+
+.social a:hover {
+  color: #ff5200;
+}
+
+/**/
+
+.logo {
+  width: 150px;
+  float: left;
+}
+
+.primadyMenu {
+  width: 990px;
+  float: left;
+}
+
+ul.mainMenuItem {
+  list-style: none;
+  float: right;
+}
+
+ul.mainMenuItem li {
+  float: left;
+}
+
+ul.mainMenuItem a {
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  color: #222;
+  text-transform: uppercase;
+  padding: 15px 22px;
+  display: block;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.primaryWrapper {
+  width: 100%;
+  display: table;
+  padding: 20px 0px;
+}
+
+ul.mainMenuItem li a:hover {
+  color: #ff5200;
+}
+
+ul.subMenu {
+  margin-top: 20px;
+  list-style: none;
+  width: 250px;
+  position: absolute;
+  top: unset;
+  background: white;
+  border-top: 1px solid #ddd;
+  padding: 20px;
+  transform: scaleY(0);
+  visibility: hidden;
+  transform-origin: top;
+  transition: 0.3s;
+}
+
+ul.subMenu li {
+  float: none;
+  position: relative;
+}
+
+ul.subMenu li a {
+  padding: 8px 0px;
+  font-family: "Work Sans";
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 14px;
+  color: #333;
+  display: block;
+  position: relative;
+  display: block;
+}
+
+ul.subMenu li a:before {
+  content: "";
+  display: inline-block;
+  width: 0px;
+  height: 2px;
+  background: #ff5200;
+  vertical-align: middle;
+  margin-right: 10px;
+  transition: 0.6s;
+}
+
+ul.subMenu li:hover a:before {
+  width: 20px;
+}
+
+ul.mainMenuItem li:hover ul.subMenu {
+  visibility: visible;
+  transform: scaleY(1);
+}
+
+/*----------------------Submenu2-----------*/
+
+ul.subMenu2 {
+  list-style: none;
+  width: 270px;
+}
+
+ul.subMenu2 {
+  list-style: none;
+  width: 250px;
+  position: absolute;
+  top: 0;
+  left: 270px;
+  background: white;
+  border-left: 1px solid #ddd;
+  padding: 20px;
+  transform: scaleX(0);
+  visibility: hidden;
+  transform-origin: left;
+  transition: 0.3s;
+}
+
+ul.subMenu li:hover ul.subMenu2 {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+ul.subMenu2 li a:before {
+  content: "";
+  display: inline-block;
+  width: 0px !important;
+  height: 2px;
+  background: #ff5200;
+  vertical-align: middle;
+  margin-right: 10px;
+  transition: 0.6s;
+}
+
+ul.subMenu2 li:hover a:before {
+  width: 20px !important;
+}
+
+/**/
+
+#homeSlider {
+  background: url(../image/slide-2.jpg);
+  background-repeat: no-repeat;
+  background-position: cover;
+  padding: 0;
+}
+
+.sliderContect h1 {
+  padding-top: 100px;
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.sliderContect {
+  color: white;
+  width: 486px;
+}
+
+.sliderContect p {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 25px;
+  line-height: 30px;
+  margin-bottom: 60px;
+}
+
+.btnDesign a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 15px 35px;
+  background: #ff5200;
+  border-radius: 3px;
+  font-weight: 500;
+  font-family: "Oswald";
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+
+.btnDesign a:hover {
+  background: #252525;
+}
+
+.slideNav span {
+  width: 7px;
+  height: 7px;
+  border: 4px solid #ddd;
+  display: block;
+  border-radius: 100%;
+  float: left;
+  background: transparent;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.slideNav {
+  margin: auto;
+  width: 55px;
+  padding: 40px 0px;
+  margin-top: 80px;
+}
+
+.slideNav span:last-child {
+  background: #ff5200;
+  border: 4px solid #ff5200;
+}
+
+/**/
+
+#services {
+  background: #f5f6f6;
+}
+.serviceContent {
+  width: 255px;
+  background: white;
+  padding: 40px 0px;
+  text-align: center;
+  float: left;
+  margin-right: 30px;
+  border: 1px solid #ddd;
+  transition: 0.5s;
+}
+
+.serviceContent:last-child {
+  margin-right: 0px;
+}
+
+.serviceContent:hover {
+  background: #ff5200;
+  cursor: pointer;
+}
+
+.serviceContent:hover i {
+  color: white;
+}
+
+.serviceIcon i {
+  font-size: 50px;
+  color: #ff5200;
+}
+
+.servicePost h2 {
+  width: 151px;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #333;
+  margin: auto;
+  padding: 20px 0px;
+}
+
+.servicePost p {
+  color: #666;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+
+.serviceLink a {
+  text-decoration: none;
+  color: #ff5200;
+  font-weight: 500;
+}
+
+.serviceWrapper {
+  overflow: hidden;
+}
+
+.serviceContent:hover h2 {
+  color: white;
+}
+
+.serviceContent:hover p {
+  color: white;
+}
+
+.serviceContent:hover a {
+  color: white;
+}
+
+.activeService {
+  background: #ff5200;
+}
+
+.activeService i {
+  color: white;
+}
+
+.activeService h2 {
+  color: white;
+}
+
+.activeService p {
+  color: white;
+}
+
+.activeService a {
+  color: white;
+}
+
+/**/
+
+section#teamInfoDone {
+  background: #f5f6f6;
+}
+
+.teamWrapper {
+  overflow: hidden;
+}
+
+.leftImage {
+  width: 550px;
+  float: left;
+}
+
+.leftImage img {
+  width: 100%;
+}
+
+.rightContent {
+  width: 550px;
+  float: right;
+}
+
+.teamPost h1 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.teamPost p {
+  line-height: 25px;
+  color: #666;
+  margin-bottom: 30px;
+  width: 510px;
+}
+
+.teanContentList {
+  overflow: hidden;
+  margin-bottom: 35px;
+}
+
+.teanContentList ul {
+  list-style: none;
+}
+
+.teanContentList ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  line-height: 35px;
+  transition: 0.3s;
+}
+
+ul.teamLeftList {
+  float: left;
+  margin-right: 110px;
+}
+
+ul.teamRightList {
+  float: left;
+}
+
+.teanContentList i {
+  font-size: 12px;
+}
+
+.teamBtn a {
+  background: #ff5200;
+  color: white;
+  padding: 13px 35px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Oswald";
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  overflow: hidden;
+  transition: 0.3s;
+  display: table;
+}
+
+.teanContentList ul li a:hover {
+  color: #ff5200;
+}
+
+.teamBtn a:hover {
+  background: #333;
+}
+
+/**/
+
+#projectStatus {
+  background: linear-gradient(#000000a6, #000000a6),
+    url(../image/why-choose-us1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.projectStatusWrapper {
+  overflow: hidden;
+}
+
+.projectStatusContent {
+  color: white;
+  float: left;
+  width: 240px;
+  text-align: center;
+  margin-right: 60px;
+  padding: 25px 0px;
+}
+
+.projectStatusContent i {
+  font-size: 55px;
+}
+
+.projectStatusContent h2 {
+  font-size: 45px;
+  font-family: arial black;
+}
+
+.projectStatusContent:last-child {
+  margin-right: 0px;
+}
+
+.projectStatusContent i {
+  margin-bottom: 20px;
+}
+
+.projectStatusContent h2 {
+  margin-bottom: 20px;
+}
+
+.projectStatusContent h3 {
+  font-size: 20px;
+}
+
+.projectStatusContent {
+  margin-right: 60px;
+}
+
+.projectStatusContent:last-child {
+  margin-right: 0px;
+}
+
+/**/
+
+.titleHeadlinePost {
+  text-align: center;
+}
+
+.titleHeadlinePost h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.titleHeadlinePost p {
+  color: #666;
+  width: 500px;
+  margin: auto;
+  line-height: 25px;
+  margin-bottom: 60px;
+  margin-top: 25px;
+}
+
+.titleHeadlinePost h1:before {
+  content: "";
+  border-bottom: 4px solid #ff5200;
+  position: absolute;
+  width: 57px;
+  top: 68px;
+  transform: translateX(-17%);
+  left: 48%;
+}
+
+.teamInfoContent {
+  overflow: hidden;
+}
+
+.teamInfoContentPost {
+  width: 260px;
+  float: left;
+  margin-right: 30px;
+}
+
+.teamInfoContentPost img {
+  width: 100%;
+}
+
+.teamInfoContentPost:last-child {
+  margin-right: 0px;
+}
+
+.teamInfoContentPost h2 {
+  font-size: 20px;
+  margin: 15px 0px;
+}
+
+.teamInfoContentPost p {
+  color: #666;
+  line-height: 25px;
+}
+
+/**/
+
+.tableConent {
+  width: 290px;
+  float: left;
+  border: 1px solid #ddd;
+  padding: 25px 0px 25px 40px;
+  margin-right: 30px;
+  transition: 0.3s;
+}
+
+.tableConent:hover {
+  transform: scale(1.1);
+  background: #cacaca38;
+  box-shadow: -75px 0px 14px 0px #32323238;
+  cursor: pointer;
+}
+
+.tableConent ul {
+  list-style: none;
+}
+
+.tableConent ul li {
+  line-height: 35px;
+  color: #333;
+}
+
+.tableConent ul li i {
+  color: #ff5200;
+}
+
+.tableConent:last-child {
+  margin: 0;
+}
+
+.tableConent h2 {
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+.tableConent h1 {
+  font-size: 50px;
+  font-family: arial black;
+  margin: 10px 0px;
+}
+
+.tableConent span {
+  font-size: 23px;
+}
+
+.priceFeatureBtn a {
+  background: #ff5200;
+  padding: 13px 38px;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Oswald";
+  border-radius: 3px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.priceFeatureBtn a:hover {
+  background: #333;
+}
+
+.priceFeatureBtn {
+  margin: 30px 0px;
+}
+
+.packageTable {
+  display: table;
+  margin: auto;
+}
+
+.ideaShowcaseRightImage {
+  width: 50%;
+  height: 480px;
+  float: left;
+}
+
+.ideaShowcaseRightImage img {
+  width: 100%;
+  height: 100%;
+}
+
+section#ideaShowcase {
+  padding: 0;
+  overflow: hidden;
+}
+
+.ideaShowcaseLeftContent {
+  width: 50%;
+  float: right;
+  background: #222222;
+  color: white;
+  padding: 3px 0px;
+  overflow: hidden;
+}
+
+.ideaShowcasePost {
+  margin-left: 65px;
+  width: 820px;
+}
+
+.ideaShowcasePost h1 {
+  font-size: 35px;
+  margin-bottom: 20px;
+  margin-top: 60px;
+}
+
+.ideaShowcaseSingleBoxes {
+  margin-left: 60px;
+  padding: 60px 0px !important;
+  overflow: hidden;
+}
+
+.ideaShowcaseBoxLeftt {
+  overflow: hidden;
+  float: left;
+}
+
+.ideaShowcaseBoxRight {
+  overflow: hidden;
+  float: left;
+}
+
+.ideaShowcaseSingleBoxIcon {
+  width: 60px;
+  float: left;
+  overflow: hidden;
+  font-size: 45px;
+  color: #ff5200;
+}
+
+.ideaShowcaseSingleBox {
+  overflow: hidden;
+}
+
+.ideaShowcaseSingleBoxPost {
+  float: left;
+  overflow: hidden;
+  width: 375px;
+}
+
+.ideaShowcaseSingleBoxPost h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  transition: 0.3s;
+}
+
+.ideaShowcaseSingleBoxPost h2:hover {
+  color: #ff5200;
+  cursor: pointer;
+}
+
+.ideaShowcaseSingleBoxPost p {
+  color: #ddd;
+  margin-bottom: 35px;
+}
+
+/**/
+
+.ourTeamFaceContent {
+  display: table;
+}
+
+.ourTeamFaceContentSingle {
+  width: 260px;
+  float: left;
+  margin-right: 30px;
+  text-align: center;
+  transition: 0.3s;
+  display: block;
+}
+
+.ourTeamFaceContentSingle img {
+  width: 100%;
+}
+
+.ourTeamFaceContentSingle:last-child {
+  margin-right: 0px;
+}
+
+.facePost {
+  padding: 25px;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.facePost p {
+  color: #666;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.faceImage {
+  position: relative;
+  overflow: hidden;
+}
+
+.socialIcon {
+  position: absolute;
+  text-align: center;
+  width: 160px;
+  bottom: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.socialIcon a {
+  display: grid;
+  place-items: center;
+  height: 20px;
+  width: 20px;
+  float: left;
+  padding: 5px;
+  overflow: hidden;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 100%;
+  margin: 5px;
+  color: white;
+  transition: 0.5s;
+}
+
+.socialIcon a:first-child {
+  background: #395693;
+  opacity: 0;
+  transition: 0.9s;
+}
+
+.socialIcon a:nth-child(2) {
+  background: #00a7e7;
+  opacity: 0;
+  transition: 0.7s;
+}
+
+.socialIcon a:nth-child(3) {
+  background: #d44837;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.socialIcon a:last-child {
+  background: #0e72a3;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.ourTeamFaceContentSingle:hover .socialIcon a:first-child {
+  transform: translateY(20px);
+  opacity: 1;
+}
+
+.ourTeamFaceContentSingle:hover .socialIcon a:nth-child(2) {
+  transform: translateY(20px);
+  opacity: 1;
+}
+
+.ourTeamFaceContentSingle:hover .socialIcon a:nth-child(3) {
+  transform: translateY(20px);
+  opacity: 1;
+}
+
+.ourTeamFaceContentSingle:hover .socialIcon a:last-child {
+  transform: translateY(20px);
+  opacity: 1;
+}
+
+.ourTeamFaceBtn {
+  display: grid;
+  place-items: center;
+  margin-top: 60px;
+}
+
+.ourTeamFaceBtn a {
+  text-decoration: none;
+  background: #333;
+  color: white;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  font-family: "Oswald";
+  border-radius: 3px;
+  font-weight: 500;
+  transition: 0.3s;
+  letter-spacing: 1px;
+}
+
+.ourTeamFaceBtn a:hover {
+  background: #ff5200;
+}
+
+.socialIcon a:hover {
+  background: white;
+  color: black;
+}
+
+.ourTeamFaceContentSingle:hover {
+  transform: scale(1.1);
+  background: #cacaca38;
+  box-shadow: -75px 0px 14px 0px #32323238;
+  cursor: pointer;
+}
+
+/**/
+
+section#bestProject {
+  background: #f5f5f5;
+}
+
+.bestProjectWrapper {
+  overflow: hidden;
+  column-count: 3;
+}
+
+.bestProjectSingle {
+  width: 350px;
+  margin-right: 30px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.bestProjectSingle:last-child {
+  margin-right: 0px;
+}
+
+.bestProjectSingle img {
+  width: 100%;
+}
+.bpPost {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 30px;
+  color: white;
+  background: linear-gradient(to top, black, transparent 160px);
+  padding-bottom: 0px;
+  transition: 0.3s;
+}
+
+.bpPost h3 {
+  width: 270px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.bpPost a {
+  color: white;
+}
+
+a#learnPost i {
+  font-size: 12px;
+}
+
+.bpPost a:first-child {
+  font-weight: 700;
+}
+
+a#learnPost {
+  visibility: hidden;
+  transform: translateX(-160px);
+}
+
+.bestProjectSingle:hover .bpPost {
+  background: linear-gradient(to top, black, transparent 200px) !important;
+  padding-bottom: 40px !important;
+}
+
+.bestProjectSingle:hover a#learnPost {
+  visibility: visible;
+  transform: translateX(0px) !important;
+  transition: 0.3s;
+  transition-delay: 0.3s;
+  transition-timing-function: cubic-bezier(0, 1.28, 1, 1);
+}
+
+/**/
+
+.latestNewsWrapper {
+  overflow: hidden;
+}
+
+.latestNewsSingle {
+  width: 350px;
+  margin-right: 30px;
+  float: left;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.latestNewsSingle:last-child {
+  margin-right: 0px;
+}
+
+.newsImage img {
+  width: 100%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.latestNewsSingle:hover img {
+  transform: scale(1.1);
+}
+
+.latestNewsMeta {
+  padding: 30px;
+  border-left: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+}
+
+.latestNewsCatagory {
+  margin-bottom: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.latestNewsCatagory a {
+  text-decoration: none;
+  color: #888;
+  font-weight: 400;
+  display: block;
+  width: 120px;
+  float: left;
+  font-size: 14px;
+}
+
+.latestNewsCatagory a:last-child {
+  margin-left: 15px;
+  color: #333;
+}
+
+.latestNewsTitle h2 a {
+  color: #333;
+  text-decoration: none;
+}
+
+.latestNewsTitle h2 {
+  margin-bottom: 15px;
+}
+
+.latestNewsTitle p {
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.latestNewsTitle h2:hover a {
+  color: #ff5200;
+}
+
+.latestNewsCatagory a:last-child:hover {
+  color: #ff5200;
+}
+
+.newsImage {
+  overflow: hidden;
+}
+
+.latestNewsCatagory:after {
+  position: absolute;
+  content: "";
+  background: #ff5200;
+  width: 20px;
+  border-bottom: 2px solid #ff5200;
+  left: 100px;
+  top: 8px;
+}
+a#latestNewsReadMore {
+  color: #ff5200;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+a#latestNewsReadMore i {
+  font-size: 12px;
+}
+
+/***/
+
+footer#footer {
+  background: #1a1a1a;
+  padding-top: 200px;
+}
+
+.copyrightContainer {
+  overflow: hidden;
+  color: #999;
+  border-top: 1px solid #333;
+}
+
+.copyrightContainer .container {
+  overflow: hidden;
+}
+
+.copyrightText {
+  width: 570px;
+  float: left;
+  padding: 30px 0px;
+}
+
+.copyrightMenu {
+  width: 570px;
+  float: right;
+}
+
+.copyrightMenu ul {
+  list-style: none;
+  float: right;
+  overflow: hidden;
+}
+
+.copyrightMenu ul li {
+  float: left;
+}
+
+.copyrightMenu ul li a {
+  display: block;
+  color: #999;
+  text-decoration: none;
+  padding: 30px 16px;
+}
+
+.fboxWrapper {
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+
+.fbox {
+  overflow: hidden;
+  width: 255px;
+  float: left;
+  margin-right: 30px;
+}
+
+.fbox:last-child {
+  margin-right: 0px;
+}
+
+.fbox h3 {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.fbox {
+  color: #999;
+}
+
+.fbox p {
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+
+.fboxContact {
+  overflow: hidden;
+}
+
+.fbIconx {
+  width: 20px;
+  float: left;
+  color: #ff5200;
+  overflow: hidden;
+}
+
+.fbInfox {
+  width: 220px;
+  overflow: hidden;
+  float: left;
+  margin-left: 15px;
+}
+
+.fbInfox {
+  font-size: 15px;
+}
+
+.fbInfox {
+  height: 55px;
+}
+.ficons a {
+  text-decoration: none;
+  color: #999;
+  margin-right: 25px;
+  transition: 0.3s;
+}
+
+.ficons a:last-child {
+  margin-right: 0px;
+}
+
+.ficons a:hover {
+  color: #ff5200;
+}
+
+ul.ufLinks {
+  list-style: none;
+}
+
+ul.ufLinks li {
+  line-height: 25px;
+}
+
+ul.ufLinks li a {
+  text-decoration: none;
+  color: #999;
+  display: block;
+  padding: 7px 0px;
+  border-bottom: 1px dashed #3c3c3c;
+  transition: 0.3s;
+}
+
+ul.ufLinks li a i {
+  font-size: 12px;
+}
+
+ul.ufLinks li a:hover {
+  color: #ff5200;
+}
+
+ul.ufLinks li:last-child a {
+  border-bottom: none;
+}
+
+.fRpost {
+  overflow: hidden;
+}
+
+.fRpostMeta {
+  width: 38px;
+  color: white;
+  background: #313131;
+  float: left;
+  padding: 12px 10px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.fRpostMeta span:first-child {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.fRpostMeta span:last-child {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.fRpostTitle {
+  width: 175px;
+  float: left;
+  margin-left: 15px;
+}
+
+.fRpostTitle h3 a {
+  text-decoration: none;
+  color: #ababab;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.fRpostTitle h3 {
+  margin-bottom: 5px;
+}
+
+.fRpost {
+  margin-bottom: 30px;
+}
+
+.fRpostTitle h3 a:hover {
+  color: #ff5200;
+}
+
+.fRpostTitle span {
+  font-size: 11px;
+  color: #666;
+}
+
+/**/
+
+.subsBoxexWrapper {
+  overflow: hidden;
+  background: #ff5200;
+  border-radius: 3px;
+  padding-bottom: 20px;
+}
+
+.subsBoxSingle {
+  width: 320px;
+  overflow: hidden;
+  float: left;
+  padding: 30px;
+}
+
+.subsBoxSingle:last-child {
+  margin-right: 0px;
+}
+
+.subsBoxSingle h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.inputBoxes {
+  position: relative;
+}
+
+.inputBoxes input:first-child {
+  padding: 15px;
+  border: none;
+  width: 80%;
+  border-top-left-radius: 50px;
+  font-family: "Oswald";
+  letter-spacing: 1px;
+  border-bottom-left-radius: 50px;
+}
+
+input#subSubmit {
+  border: none;
+  padding: 16px;
+  background: black;
+  color: white;
+  font-weight: 900;
+  border-radius: 50px;
+  letter-spacing: 1px;
+  width: 120px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.inputBoxes input {
+  outline: none;
+}
+
+.inputBoxes input {
+  outline: none;
+}
+
+.subsFollowIcon {
+  overflow: hidden;
+}
+
+.subsFollowIcon a {
+  width: 30px;
+  height: 30px;
+  float: left;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  display: grid;
+  place-items: center;
+  border-radius: 100%;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.subsFollowIcon a:last-child {
+  margin-right: 0px;
+}
+
+.subsBoxSingle p {
+  color: white;
+  line-height: 25px;
+}
+
+section#subscribe {
+  position: relative;
+  margin-bottom: -75px;
+  padding: 0;
+}
+
+.subsFollowIcon a:hover {
+  background: white;
+  color: black;
+}
